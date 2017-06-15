@@ -1,0 +1,23 @@
+/* Console input first line: n
+ * Second line: n number of integers
+ * Returns array of ints.
+ * */
+public int[] storeConsoleInput()
+{
+    int length;
+    int index;
+    int[] nums;
+    Scanner sc;
+    
+    index = 0;
+    sc = new Scanner(System.in);
+    length = sc.nextInt();
+    nums = new int[length];
+    
+    while (index < length)
+    {
+        nums = sc.nextInt();
+        index++;
+    }
+    return nums;
+}
